@@ -15,8 +15,7 @@ jobs:
 
       - name: use a specific action
         id: foo
-        uses: ./.github/actions/random-number-action
-          #uses: ./.github/actions/random-number-action@v1
+        uses: ./.github/actions/random-number-action@v1.1
         with:
           who-to-greet: 'Supesharisuto '
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
