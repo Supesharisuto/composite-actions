@@ -20,7 +20,7 @@ jobs:
           who-to-greet: 'Supesharisuto '
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
-       -
+      -
         # for debug only do not enable
         # https://github.com/marketplace/actions/debugging-with-tmate
         name: Run tmate
