@@ -6,17 +6,16 @@ jobs:
     name: A job to say hello
     steps:
       - name: Checkout custom actions repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: supesharisuto/composite-actions
           path: composit-actions
-
       - name: checkout code
         uses: actions/checkout@v3
 
       - name: use a specific action
         id: foo
-        uses: ./composit-actions/.github/actions/random-number-action@v1
+        uses: ./composite-actions/.github/actions/random-number-action@v1
         with:
           who-to-greet: 'Supesharisuto '
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
