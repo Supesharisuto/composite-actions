@@ -28,6 +28,5 @@ jobs:
         if: ${{ always() }}
         uses: mxschmitt/action-tmate@v3
         with:
-          install-dependencies: false
-          #install-dependencies: true
+          install-dependencies: true
 
